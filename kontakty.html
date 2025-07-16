@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uvod.css">
+    <title>Kontakty</title>
+
+    <script src="https://kit.fontawesome.com/634749b135.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <script src="script.js" defer></script>
+
+    	<!-- Start cookieyes banner -->
+	<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/88b86c64fda15ab85c175300/script.js"></script>
+	<!-- End cookieyes banner -->
+</head>
+
+<body>
+  <div class="mobile-nav">
+        <div class="mobile-nav-img" onclick="window.location.href='index.html'"></div>
+        <button aria-label="Open/close navigation menu" id="open-sidebar-button" onclick="openSidebar()">
+            <div class="hamburger-line top"></div>
+            <div class="hamburger-line middle"></div>
+            <div class="hamburger-line bottom"></div>
+        </button>
+    </div>
+
+    <nav class="navbar" id="navbar" aria-label="Hlavní navigace">
+        <div class="navcontainer">
+            <a href="index.html" class="navbar-logo"></a>
+            <ul class="navbar-nav">
+                <li><a href="index.html#reference" class="nav-link">Reference</a></li>
+                <li><a href="index.html#omne" class="nav-link">O mně</a></li>
+                <li><a href="index.html#cenik" class="nav-link">Ceník</a></li>
+                <li><a href="kontakty.html" class="nav-link">Kontakt</a></li>
+                <li><button type="button" class="btn btn-primary" onclick="window.location.href='kontakty.html'">Nezávazně poptat</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="overlay" onclick="openSidebar()"></div>
+
+    <section class="kontaktheader">
+        <div class="headercontainer">
+            <h1 class="text-xxl margin-bottom-s">KONTAKT</h1>
+            <hr>
+        </div>
+    </section>
+
+    <section class="info-form">
+        <div class="container">
+            <div class="kontakty-info">
+                <h2 class="text-xl margin-bottom-m">SPOJTE SE SE MNOU</h2>
+                <p class="margin-bottom-l">Jsem na příjmu každý den. Většinou odpovím do 24 hodin - někdy dřív, někdy
+                    trochu později. Ale ozvu se.</p>
+                <ul>
+                    <li onclick="window.location.href='tel:+420722544926'">
+                        <div class="circleicon">
+                            <i class="fa-solid fa-phone text-grey"></i>
+                        </div>
+                        <div class="h-t-kont">
+                            <h3>TELEFON</h3>
+                            <a class="text-grey">+420 722 544 926</a>
+                        </div>
+                    </li>
+
+                    <li onclick="window.location.href='mailto:martin.skala3@gmail.com'">
+                        <div class="circleicon">
+                            <i class="fa-solid fa-envelope text-grey"></i>
+                        </div>
+                        <div class="h-t-kont">
+                            <h3>Email</h3>
+                            <a class="text-grey">Klikněte pro Email</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="circleicon">
+                            <i class="fa-solid fa-clock text-grey"></i>
+                        </div>
+                        <div class="h-t-kont">
+                            <h3>NA PŘÍJMU</h3>
+                            <a class="text-grey">24/7</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="kontakt-forma">
+                <form name="kontakt-forma" class="form" method="POST" data-netlify="true" action="/thank-you.html">
+                    <h2 class="title text-l">VYPLŇTE FORMULÁŘ A JÁ SE VÁM DO 24H OZVU...</h2>
+                    <div class="input-container ic1">
+                        <input name="firstname" id="firstname" class="input" type="text" placeholder=" " required />
+                        <div class="cut"></div>
+                        <label for="firstname" class="placeholder">Jméno a příjmení</label>
+                    </div>
+
+                    <div class="input-container ic2">
+                        <input name="oborpodnikani" id="oborpodnikani" class="input" type="text" placeholder=" " required />
+                        <div class="cut cut-mid"></div>
+                        <label for="oborpodnikani" class="placeholder">Obor podnikání</label>
+                    </div>
+
+                    <div class="input-container ic2">
+                        <input name="email" id="email" class="input" type="email" placeholder=" " required />
+                        <div class="cut cut-short"></div>
+                        <label for="email" class="placeholder">Email</label>
+                    </div>
+
+                    <div class="input-container ic2">
+                        <input name="telefon" id="telefon" class="input" type="tel" placeholder=" " required />
+                        <div class="cut cut-telefon"></div>
+                        <label for="telefon" class="placeholder">Telefon</label>
+                    </div>
+
+                    <div class="input-container-area ic2">
+                        <textarea name="textarea" id="textarea" class="input" placeholder=" "></textarea>
+                        <div class="cut cut-area"></div>
+                        <label for="textarea" class="placeholder margin-bottom-m">Poznámka...</label>
+                    </div>
+
+                      <div data-netlify-recaptcha="true" class="margin-bottom-m"></div>
+
+                    <button type="submit" class="btn btn-primary">Odeslat</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+<footer>
+        <div class="footer">
+            <div class="upper-section">
+                <div class="logo-footer">
+                    <div class="logo-white margin-bottom-m"></div>
+                    <p class="text-s margin-bottom-m text-white">Weby mě baví - a chci, aby bavily i Vás.</p>
+                    <button type="button" class="btn btn-white" onclick="window.location.href='kontakty.html'">Nezávazně poptat</button>
+                </div>
+                <div class="menu-footer">
+                    <h4 class="text-m margin-bottom-s">MENU</h4>
+                    <ul class="footer-menu-links">
+                        <li><a href="index.html#reference" class="footer-link">Reference</a></li>
+                        <li><a href="Uindex.html#omne" class="footer-link">O mně</a></li>
+                        <li><a href="index.html#cenik" class="footer-link">Ceník</a></li>
+                        <li><a href="kontakty.html" class="footer-link">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="info-footer">
+                    <h4 class="text-m margin-bottom-s">INFO</h4>
+                    <ul class="footer-infos">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Praha</p>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <p><a href="tel:+420722544926">722 544 926</a></p>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>martin.skala3@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr>
+
+            <div class="lower-section">
+                <div class="copyright">
+                    <p>© <span id="year"></span> SMwebDesign</p>
+                </div>
+                <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
