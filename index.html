@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uvod.css">
+    <title>Tvorba webových stránek pro menší podniky</title>
+    <meta name="description" content="Tvořím rychlé a funkční weby na míru pro menší podnikatele. Žádný WordPress, čistý kód, skvělá podpora a SEO optimalizace. Nezávazně poptejte!">
+
+    <script src="https://kit.fontawesome.com/634749b135.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+
+    <!-- Start cookieyes banner -->
+	<script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/88b86c64fda15ab85c175300/script.js"></script>
+    
+    <!-- Light mode favicon -->
+    <link rel="icon" href="/Images/favicon.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
+
+
+    <!-- Dark mode favicon -->
+    <link rel="icon" href="/Images/favicon-darkmode.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
+
+    <!-- PNG Fallback -->
+    <link rel="shortcut icon" href="/Images/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/Images/apple-touch-icon.png">
+
+
+    <meta property="og:title" content="Tvorba webových stránek pro menší podniky">
+    <meta property="og:description" content="Tvořím rychlé a funkční weby na míru pro menší podnikatele. Žádný WordPress, čistý kód, skvělá podpora a SEO optimalizace. Nezávazně poptejte!">
+    <meta property="og:image" content="/Images/socialfoto.png">
+    <meta property="og:url" content="https://smwebdesign.cz/">
+</head>
+
+<body>
+
+    <div class="mobile-nav">
+        <div class="mobile-nav-img" onclick="window.location.href='index.html'"></div>
+        <button aria-label="Open/close navigation menu" id="open-sidebar-button" onclick="openSidebar()">
+            <div class="hamburger-line top"></div>
+            <div class="hamburger-line middle"></div>
+            <div class="hamburger-line bottom"></div>
+        </button>
+    </div>
+
+    <nav class="navbar" id="navbar" aria-label="Hlavní navigace">
+        <div class="navcontainer">
+            <a href="index.html" class="navbar-logo"></a>
+            <ul class="navbar-nav">
+                <li><a href="index.html#reference" class="nav-link">Reference</a></li>
+                <li><a href="index.html#omne" class="nav-link">O mně</a></li>
+                <li><a href="index.html#cenik" class="nav-link">Ceník</a></li>
+                <li><a href="kontakty.html" class="nav-link">Kontakt</a></li>
+                <li><button type="button" class="btn btn-primary" onclick="window.location.href='kontakty.html'">Nezávazně poptat</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="overlay" onclick="openSidebar()"></div>
+
+    <section class="hero" aria-labelledby="hero-heading">
+  <div class="container">
+    <div class="hero-text">
+
+      <a target="_blank" href="https://www.google.com/search?sca_esv=ba28415142d5cdfa&sxsrf=AE3TifMil8Y9zFIHevXPJj1D4moKDKNGtA:1752660404696&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E4HeUnVA2jk8vai8jy7aenZOWK2hm7Djg-H7mAJqCQUdW-ngWBk-9okgD0BO6oUBwKBDqEnvuUKsrE8nOa-fkZxifobONQTOC5SBp1Q2QItOCAjyswOrPYzqYpsX68_Tj70yRvxm-esloDFV1C7ySNTEk0Kw&q=Tvorba+Webov%C3%BDch+Str%C3%A1nek+a+Marketing+%7C+SMwebDesign+Recenze&sa=X&ved=2ahUKEwixxtXmkMGOAxW_SfEDHUzdH_YQ0bkNegQIJxAE&biw=1920&bih=911&dpr=1" class="recenze margin-bottom-s" aria-label="Zobrazit recenze na Google, průměrné hodnocení pět hvězd">
+        <div class="stars" aria-hidden="true">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p>průměrné hodnocení na Google</p>
+        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+      </a>
+
+      <h1 id="hero-heading" class="text-xxl">
+        TVORBA WEBŮ PRO MENŠÍ PODNIKATELE
+      </h1>
+
+      <p class="intro text-white">
+        Už žádný WordPress. Nabízím 100% vlastnoručně kódované webové stránky, které mají lepší výsledky než jakýkoliv redakční systém.
+      </p>
+
+      <div class="buttons-hero">
+                    <button type="button" class="btn btn-secondary" onclick="window.location.href='kontakty.html'">Nezávazně poptat</button>
+                    <button type="button" class="btn btn-primary" onclick="location.href='#omne'">O mně
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+
+    <div class="hero-img-cont">
+      <div class="hero-img" role="img" aria-label="Ilustrace designu webu"></div>
+    </div>
+  </div>
+</section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="text-xl text-center">CO ODE MNE MŮŽETE OČEKÁVAT?</h2>
+            <p class="service-p text-grey">Tvořím weby tak, aby odpovídaly tomu, co dnes návštěvníci očekávají - rychlost, jednoduchost a funkčnost na mobilu. Zakládám si na čistém kódu, dobré struktuře a přehledné správě obsahu.</p>
+            <div class="card-grid">
+                <div class="card" onclick="window.location.href='kontakty.html'">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-l">POCTIVĚ KÓDOVANÝ WEB</h3>
+                    <p class="text-grey">Vše tvořím od nuly – díky tomu je web rychlejší, stabilnější a přizpůsobený na míru.</p>
+                    <button class="btn btn-transparent" onclick="window.location.href='kontakty.html'">Začít hned <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="card" onclick="window.location.href='kontakty.html'">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-mobile"></i>
+                    </div>
+                    <h3 class="text-l">MOBIL NA PRVNÍM MÍSTĚ</h3>
+                    <p class="text-grey">Dnes více jak polovina lidí otevřou web přes telefon. Váš bude fungovat perfektně na každém zařízení</p>
+                    <button class="btn btn-transparent" onclick="window.location.href='kontakty.html'">Začít hned <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="card" onclick="window.location.href='kontakty.html'">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-gauge"></i>
+                    </div>
+                    <h3 class="text-l">RYCHLOST, KTERÁ PRODÁVÁ</h3>
+                    <p class="text-grey">Načtení do 1 sekundy = více konverzí. U mne to není přání, ale standard.</p>
+                    <button class="btn btn-transparent" onclick="window.location.href='kontakty.html'">Začít hned <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="card" onclick="window.location.href='kontakty.html'">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <h3 class="text-l">ZAMĚŘENÍ NA SEO</h3>
+                    <p class="text-grey">Web postavený tak, aby si ho vyhledávač všiml. Chytrá struktura, klíčová slova a čistý kód.</p>
+                    <button class="btn btn-transparent" onclick="window.location.href='kontakty.html'">Začít hned <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="card" onclick="window.location.href='kontakty.html'">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <h3 class="text-l">KOMPLETNÍ SPRÁVA OBSAHU</h3>
+                    <p class="text-grey">Vy se soustřeďte na své podnikání. O úpravy webu se Vám postarám. Stačí říct!</p>
+                    <button class="btn btn-transparent" onclick="window.location.href='kontakty.html'">Začít hned <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+                <div class="card" onclick="window.location.href='kontakty.html'">
+                    <div class="icon-box">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </div>
+                    <h3 class="text-l">JSEM TU, KDYŽ BUDETE POTŘEBOVAT</h3>
+                    <p class="text-grey">Web nekončí odesláním faktury. Jsem váš člověk na weby, techniku i podporu do budoucna.</p>
+                    <button class="btn btn-transparent" onclick="window.location.href='kontakty.html'">Začít hned <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reference" class="reference">
+        <div class="container">
+            <div class="headingblock margin-bottom-xl">
+                <h2 class="text-xl">REFERENCE</h2>
+                <div class="ver-divider"></div>
+                <p class="reference-p text-grey">Nejlepší vizitkou mojí práce jsou spokojení klienti. Mrkněte na pár projektů, které jsme spolu zvládli – a přečtěte si, co o spolupráci říkají sami majitelé webů.</p>
+            </div>
+
+            <div class="reference-grid">
+
+                <div class="reference1">
+                    <div class="h-t-ref">
+                        <h3 class="text-l margin-bottom-s">BLANKA BOKIŠOVÁ</h3>
+                        <p class="refcardp margin-bottom-m text-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Aliquam in lorem sit amet leo accumsan lacinia.</p>
+                        <button type="button" class="btn btn-primary" onclick="window.open('https://kouzelne-masaze.cz/', '_blank')">Navštívit web</button>
+                    </div>
+                    <div class="ref-img ref-img-1"></div>
+                </div>
+
+                <div class="reference1 posun">
+                    <div class="h-t-ref">
+                        <h3 class="text-l margin-bottom-s">KARIN GENTON-L`EPÉE</h3>
+                        <p class="refcardp margin-bottom-m text-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Aliquam in lorem sit amet leo accumsan lacinia.</p>
+                        <button type="button" class="btn btn-primary" onclick="window.open('https://www.coachingwithhorses.cz/', '_blank')">Navštívit web</button>
+                    </div>
+                    <div class="ref-img ref-img-2"></div>
+                </div>
+
+                <div class="reference1">
+                    <div class="h-t-ref">
+                        <h3 class="text-l margin-bottom-s">JAN SUCHOMEL</h3>
+                        <p class="refcardp margin-bottom-m text-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Aliquam in lorem sit amet leo accumsan lacinia.</p>
+                        <button type="button" class="btn btn-primary" onclick="window.open('https://renostrech.cz/', '_blank')">Navštívit web</button>
+                    </div>
+                    <div class="ref-img ref-img-3"></div>
+                </div>
+
+                <div class="reference1 posun">
+                    <div class="h-t-ref">
+                        <h3 class="text-l margin-bottom-s">JIŘÍ KRAČMAR</h3>
+                        <p class="refcardp margin-bottom-m text-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia. Aliquam in lorem sit amet leo accumsan lacinia.</p>
+                        <button type="button" class="btn btn-primary" onclick="window.open('https://www.combino.cz/', '_blank')">Navštívit web</button>
+                    </div>
+                    <div class="ref-img ref-img-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="omne" class="omne">
+        <div class="container omne-container">
+            <div class="imgofme">
+                <div class="nametag">
+                    <div class="nametag-info">
+                        <h5 class="text-s">MARTIN SKÁLA</h5>
+                        <p class="text-s">Zakladatel, Developer</p>
+                    </div>
+                    <div class="nametag-img"></div>
+                </div>
+            </div>
+            <div class="h-t-omne">
+                <h2 class="text-xl margin-bottom-m">KDO JSEM A JAK TO CELÉ FUNGUJE - WEBOVÉ STRÁNKY ZA 1 000 KČ MĚSÍČNĚ</h2>
+                <p class="margin-bottom-m text-grey">Mé jméno je Martin. Jsem studentem 4. ročníku střední školy zaměřené na IT. Snažím se pracovat na co nejvyšší úrovní - rychlost komunikace, kvalitní práce, spolehlivost.</p>
+                <p class="margin-bottom-m text-grey">Weby mě baví a chci, aby bavily i Vás. Proto jsem vytvořil jednoduchý model spolupráce založený na <span>měsíčním poplatku 1 000 Kč o minimální době trvání 6 měsíců.</span> Tento model zahrnuje:</p>
+                <div class="qualities-grid margin-bottom-m">
+                    <div class="mini-card">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p class="text-grey">Návrh/vývoj</p>
+                    </div>
+
+                    <div class="mini-card">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p class="text-grey">Hosting</p>
+                    </div>
+
+                    <div class="mini-card">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p class="text-grey">Neomezené úpravy</p>
+                    </div>
+
+                    <div class="mini-card">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p class="text-grey">Nepřetržitou podporu</p>
+                    </div>
+                </div>
+                <p class="text-grey">( Pokud Vám tento model nevyhovuje, nabízím i jednorázovou tvorbu webu. )</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cenik" class="cenik">
+        <div class="container-sm">
+            <h2 class="text-xl margin-bottom-m text-center">CENÍK</h2>
+            <hr class="margin-bottom-xl">
+            <div class="ceny">
+                <div class="cena-card var-cana-1">
+                    <h3 class="text-l margin-bottom-m">JEDNORÁZOVÁ</h3>
+                    <ul class="kvality-list margin-bottom-xl">
+                        <li class="kvalita">
+                            <p class="text-grey">Návrh a vývoj webu na míru</p>
+                            <i class="fa-solid fa-check ban-color1"></i>
+                        </li>
+
+                        <li class="kvalita">
+                            <p class="text-grey">Hosting 400 kč/m</p>
+                            <i class="fa-solid fa-check ban-color1"></i>
+                        </li>
+
+                        <li class="kvalita">
+                            <p class="text-grey">Základní SEO optimalizace</p>
+                            <i class="fa-solid fa-check ban-color1"></i>
+                        </li>
+
+                        <li class="kvalita">
+                            <p class="text-grey">Až 6 stránek (+1500 Kč/strana)</p>
+                            <i class="fa-solid fa-check ban-color1"></i>
+                        </li>
+
+                        <li class="kvalita">
+                            <p class="text-grey">IT podpora</p>
+                            <i class="fa-solid fa-ban ban-color2"></i>
+                        </li>
+
+                        <li class="kvalita">
+                            <p class="text-grey">Úpravy kdykoliv</p>
+                            <i class="fa-solid fa-ban ban-color2"></i>
+                        </li>
+                    </ul>
+
+                    <div class="cislo-cena margin-bottom-m">
+                        <h4 class="text-xl">20 000 kč</h4>
+                        <p class="text-s text-grey">+400 kč/m hosting</p>
+                    </div>
+
+                    <button type="button" class="btn btn-primary" onclick="window.location.href='kontakty.html'">Začít hned</button>
+                </div>
+
+                <div class="cena-card var-cana-2">
+                    <h3 class="text-l margin-bottom-m">MĚSÍČNÍ</h3>
+                    <ul class="kvality-list margin-bottom-xl">
+                        <li class="kvalita">
+                            <p class="text-white">Návrh a vývoj webu na míru</p>
+                            <i class="fa-solid fa-check ban-color1"></i>
+                        </li>
+
+                        <li class="kvalita">
+                            <p class="text-white">Hosting zahrnut</p>
+                            <i class="fa-solid fa-check ban-color1"></i>
+                        </li>
+
+                        <li class="kvalita">
+                            <p class="text-white">Základní SEO optimalizace</p>
+                            <i class="fa-solid fa-check ban-color1"></i>
+                        </li>
+
+                        <li class="kvalita">
+                            <p class="text-white">Až 6 stránek (+1500 Kč/strana)</p>
+                            <i class="fa-solid fa-check ban-color1"></i>
+                        </li>
+
+                        <li class="kvalita">
+                            <p class="text-white">IT podpora</p>
+                            <i class="fa-solid fa-check ban-color1"></i>
+                        </li>
+
+                        <li class="kvalita">
+                            <p class="text-white">Úpravy kdykoliv</p>
+                            <i class="fa-solid fa-check ban-color1"></i>
+                        </li>
+                    </ul>
+
+                    <div class="cislo-cena margin-bottom-m">
+                        <h4 class="text-xl">1 000 kč</h4>
+                        <p class="text-s text-white">za měsíc</p>
+                    </div>
+
+                    <button type="button" class="btn btn-secondary" onclick="window.location.href='kontakty.html'">Začít hned</button>
+                </div>
+            </div>
+        </div>     
+    </section>
+
+    <section class="endcta">
+        <div class="cta-container cta-end">
+            <h3 class="text-l ctatext">JSEM NA PŘÍJMU. NAPIŠTE A OZVU SE VÁM DO 24 HODIN.</h3>
+            <button type="button" class="btn btn-secondary" onclick="window.location.href='kontakty.html'">Nezávazně poptat</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="upper-section">
+                <div class="logo-footer">
+                    <div class="logo-white margin-bottom-m"></div>
+                    <p class="text-s margin-bottom-m text-white">Weby mě baví - a chci, aby bavily i Vás.</p>
+                    <button type="button" class="btn btn-white" onclick="window.location.href='kontakty.html'">Nezávazně poptat</button>
+                </div>
+                <div class="menu-footer">
+                    <h4 class="text-m margin-bottom-s">MENU</h4>
+                    <ul class="footer-menu-links">
+                        <li><a href="index.html#reference" class="footer-link">Reference</a></li>
+                        <li><a href="Uindex.html#omne" class="footer-link">O mně</a></li>
+                        <li><a href="index.html#cenik" class="footer-link">Ceník</a></li>
+                        <li><a href="kontakty.html" class="footer-link">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="info-footer">
+                    <h4 class="text-m margin-bottom-s">INFO</h4>
+                    <ul class="footer-infos">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Praha</p>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <p><a href="tel:+420722544926">722 544 926</a></p>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>martin.skala3@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr>
+
+            <div class="lower-section">
+                <div class="copyright">
+                    <p>© <span id="year"></span> SMwebDesign</p>
+                </div>
+                <a href="ochrana-osobnich-udaju.html">Ochrana osobních údajů</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
