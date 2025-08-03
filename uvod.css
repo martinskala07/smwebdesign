@@ -200,6 +200,12 @@ html {
   background-repeat: no-repeat;
 }
 
+.kadernice-hero-img {
+  background-image: url(Images/kadernice-hero-img.webp);
+}
+
+
+
 .hero-img-cont {
   width: 50%;
   height: fit-content;
@@ -428,6 +434,10 @@ html {
   border: solid 1px #00265252;
 }
 
+.ref-img-kadernice {
+    height: 450px;
+}
+
 .ref-img-1 {
   background-image: url('Images/masazenew.webp');
 }
@@ -548,6 +558,11 @@ html {
   gap: 8px;
   justify-self: start;
   font-weight: 400;
+}
+
+.mini-card-reference {
+  justify-content: start;
+
 }
 
 .mini-card i {
@@ -1241,6 +1256,10 @@ footer hr {
   color: #fff;
 }
 
+.margin-bottom-xs {
+  margin-bottom: 8px;
+}
+
 .margin-bottom-s {
   margin-bottom: 16px;
 }
@@ -1505,6 +1524,10 @@ footer hr {
 
 .ref-img {
   width: 100%;
+}
+
+.ref-img-kadernice {
+    height: 320px;
 }
 
 .cislo-cena p {
