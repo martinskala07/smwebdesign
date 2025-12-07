@@ -202,6 +202,10 @@ html {
   background-repeat: no-repeat;
 }
 
+.kadernice-hero-img {
+  background-image: url(Images/kadernice-hero-img.webp);
+}
+
 .hero-img-cont {
   width: 50%;
   height: fit-content;
@@ -655,6 +659,20 @@ html {
   margin-top: 24px;       /* push down or up as needed */
   color: var(--color-secondary-less);        /* style of quote */
     float: right;   
+}
+
+.mini-card-reference {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+    justify-self: start;
+    font-weight: 400;
+}
+
+.mini-card-reference i {
+  color: var(--color-secondary);
 }
 
 .omne-container {
